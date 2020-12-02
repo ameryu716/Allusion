@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login|Allusion</title>
+        <link href="./style.css" rel="stylesheet">
+        <link href="./src/css/formin.css" rel="stylesheet"></link>
+    </head>
+    <body>
+        <div id="wrap">
+            <header class="header">
+                <div id="logo"></div>
+            </header>
+            <main>
+                <!-- ログイン -->
+                <div id="login-enterbox" class="enterbox">
+                    <span><label id="login-form-title" for="login-form-mail">Login</span></label>
+                </div>
+                <div id="login-arrow" class="arrow">
+                    →
+                </div>
+                <div id="loginform" class="formdiv">
+                    <form action="./AnimeaPassSend.html" method="GET" name="login" id="form-element">
+                        <div id="login-form-title" class="form-title">
+                            <div>
+                                <i id="login-selectback" class="selectback">←</i>
+                            </div>
+                        </div>
+                        <input type="text" name="mail" placeholder="mail" id="login-form-mail"  class="loginput form-mail">
+                        <input type="password" name="pass" placeholder="pass" id="login-form-pass" class="loginput form-pass">
+                        <i id="login-pasappear" class="pasappear">◎</i>
+                        <p class="error-message"></p>
+                        <p id="login-pasforgot" class="pasforgot"><a href="#" tabindex="-1">◎パスワードを忘れたときは...</a></p>
+                        <input type="submit" value="Enter" id="login-form-submit" class="form-submit">
+                    </form>
+                </div>
+                <!-- サインアップ -->
+                <div id="signup-enterbox" class="enterbox">
+                    <span><label id="signup-form-title" for="signup-form-mail">SignUp</span></label>
+                </div>
+                <div id="signup-arrow" class="arrow">
+                    ↑
+                </div>
+                <div id="signupform" class="formdiv">
+                    <form action="./AnimeaPassSend.html" method="GET" name="signup" id="signup-form-element" class="form">
+                        <div id="signup-form-title" class="form-title">
+                            <div>
+                                <i id="signup-selectback" class="selectback">←</i>
+                            </div>
+                        </div>
+                        <input type="text" name="mail" placeholder="mail" id="signup-form-mail" class="signupinput loginput form-mail">
+                        <input type="password" name="pass" placeholder="pass" id="signup-form-pass" class="signupinput loginput form-pass">
+                        <i id="signup-pasappear" class="pasappear">◎</i>
+                        <p class="error-message"></p>
+                        <p id="signup-pasforgot" class="pasforgot"><a href="#" tabindex="-1">◎パスワードを忘れたときは...</a></p>
+                        <input type="submit" value="Enter" id="signup-form-submit" class="form-submit">
+                    </form>
+                </div>
+
+
+
+
+                <div id="help">
+                    <small>
+                    ◎入力いただいた情報はhttps方式により暗号化されサーバーに送信し、責任を持って管理致します。
+                    また、当情報は本サービスのログイン・ログアウト・登録機能にのみ用いるものとし、
+                    その他一切の利用方法では利用をしないことをお約束いたします。
+                    </small>
+                </div>
+            </main>
+        </div>
+        <script src="./src/js/formin.js"></script>
+    </body>
+</html>

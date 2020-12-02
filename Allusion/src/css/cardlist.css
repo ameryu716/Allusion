@@ -1,0 +1,90 @@
+aside {
+    position: relative;
+    width: 420px;
+    height: 85vh;
+    margin: 40px 20px 20px 10px;
+    border: solid 1px gray;
+    padding: 10px;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+.filter-icon {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 35px;
+}
+aside ul {
+    padding: 0;
+}
+.animecard {
+    width: 100%;
+    padding: 0;
+    border: solid 1px gray;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+}
+/* .anime-img-board {
+    width: 40%;
+    display: block;
+} */
+.anime-cnt-board {
+    width: 60%;
+    display: block;
+}
+.anime-sumbnail {
+    width: 150px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.title-board {
+    width: 228px;
+    height: 35px;
+    border-bottom: gray solid 2px;
+    padding-left: 7px;
+    position: relative;
+}
+
+.card-title {
+    height: 40px;
+    width: 130px;
+    font-size: 21px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.card-title span.scrolltype{
+    display: inline-block;
+    animation: wordscroll 8s infinite linear;
+    animation-delay: 2s;
+}
+@keyframes wordscroll {
+    0%{transform: translateX(0);}
+    15%{transform: translateX(0);}
+    100%{transform: translateX(-110%);}
+}
+
+
+
+.title-board .date {
+    font-size: 15px;
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 2px;
+}
+.date::after{
+    display: block;
+    content: "";
+    width: 80px;
+    border-bottom: solid rgba(36, 219, 36, 0.7) 3px;
+    position: absolute;
+    top: 18px;
+    left: -5px;
+    transform: rotateZ(-3deg);
+}
+.card-content {
+    font-size: 23px;
+    padding: 12px 0 0 50px;
+}
